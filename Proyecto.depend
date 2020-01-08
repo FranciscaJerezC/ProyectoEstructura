@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1567649030 source:c:\users\panxi\onedrive\escritorio\proyecto\list.c
+	"list.h"
+	<stdlib.h>
+	<assert.h>
+
+1567649030 c:\users\panxi\onedrive\escritorio\proyecto\list.h
+
+1578449875 source:c:\users\panxi\onedrive\escritorio\proyecto\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"Map.h"
+	"List.h"
+
+1578449783 c:\users\panxi\onedrive\escritorio\proyecto\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"Map.h"
+	"List.h"
+
+1538512728 c:\users\panxi\onedrive\escritorio\proyecto\map.h
+
+1541948956 source:c:\users\panxi\onedrive\escritorio\proyecto\map.c
+	"Map.h"
+	<math.h>
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	<assert.h>
+
+1578453212 source:c:\users\panxi\onedrive\escritorio\proyecto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"Map.h"
+	"List.h"
+	"funciones.h"
+
