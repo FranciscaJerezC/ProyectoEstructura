@@ -2,25 +2,46 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <time.h>
 #include "Map.h"
 #include "List.h"
+
 #include "funciones.h"
+
 int main()
 {
+    printf("\n\n\n\n\n\n\n");
+    printf(R"EOF(
+    .__   __.   ______   ____    ____  ___         .___________. _______ .______      .______          ___
+    |  \ |  |  /  __  \  \   \  /   / /   \        |           ||   ____||   _  \     |   _  \        /   \
+    |   \|  | |  |  |  |  \   \/   / /  ^  \       `---|  |----`|  |__   |  |_)  |    |  |_)  |      /  ^  \
+    |  . `  | |  |  |  |   \      / /  /_\  \          |  |     |   __|  |      /     |      /      /  /_\  \
+    |  |\   | |  `--'  |    \    / /  _____  \         |  |     |  |____ |  |\  \----.|  |\  \----./  _____  \
+    |__| \__|  \______/      \__/ /__/     \__\        |__|     |_______|| _| `._____|| _| `._____/__/     \__\)EOF");
+
     int op;
+    Usuario* usuario=UsuarioEntrada();
     char * nombre = (char*)calloc(20,sizeof(char));
     char nombreComunidad[200];
+    //cargarUsuarios
+    Map* mapaUsuarios=createMap(stringHash,stringEqual);
+    list *listaParametros = list_create_empty();
+    list* ListaProyectos = list_create_empty();
+    list* ListaSubproyectos = list_create_empty();
 
     while(op) //Menu principal
         {
+            getchar();
+            getchar();
             system("cls");
             printf("1.-Iniciar Partida Nueva\n");
             printf("2.-Cargar Partida\n");
             printf("3.-Informacion/Insumos\n");
+            printf("4.-Salir y Guardar\n");
             printf("Escoja una opcion -> ");
             scanf("%i",&op);
 
-            if( op < 1 || op > 3)
+            if( op < 1 || op > 4)
             {
                 system("cls");  //Limpia pantalla
                 printf("Ingrese un valor valido\n");
@@ -53,7 +74,7 @@ int main()
                     getchar();
                     getchar();
 
-                    crearUsuario(nombre,nombreComunidad);
+                    crearUsuario(nombre,nombreComunidad,mapaUsuarios);
                     system("cls");
                     break; //vuelve a la pantalla principal
 
@@ -61,12 +82,28 @@ int main()
               case 2: //Cargar Partida
                     system("cls");
 
+                    //printf("Ingrese su Nombre de Usuario");
+                    //getchar();
+                    //scanf("%[^\n]s",nombre);
+                    //buscarPartida(nombre,mapaUsuarios);
                     break;
 
               case 3: //Informacion
 
                     system("cls");
+                    //mostrarCancion(mapaUsuarios);
                     break;
+              case 4:  //genera numeros random, solo para probar
+                    system("cls");
+                    /*int minimo = 1;
+                    int maximo = 30;
+                    srand(time(0));
+                    numerosRandom(minimo, maximo);
+                    getchar();
+                    getchar();*/
+                    //y
+                    guardarUsuario(usuario);
+                    exit(1);
             }
 
         }
