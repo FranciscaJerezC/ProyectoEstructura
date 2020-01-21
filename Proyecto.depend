@@ -6,7 +6,7 @@
 
 1578511558 c:\users\panxi\onedrive\escritorio\proyecto\list.h
 
-1578589663 source:c:\users\panxi\onedrive\escritorio\proyecto\funciones.c
+1579578009 source:c:\users\panxi\onedrive\escritorio\proyecto\funciones.c
 	"funciones.h"
 	<stdio.h>
 	<stdlib.h>
@@ -16,7 +16,7 @@
 	"Map.h"
 	"List.h"
 
-1578589651 c:\users\panxi\onedrive\escritorio\proyecto\funciones.h
+1579576939 c:\users\panxi\onedrive\escritorio\proyecto\funciones.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -34,7 +34,7 @@
 	<stdint.h>
 	<assert.h>
 
-1578589743 source:c:\users\panxi\onedrive\escritorio\proyecto\main.c
+1579576239 source:c:\users\panxi\onedrive\escritorio\proyecto\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

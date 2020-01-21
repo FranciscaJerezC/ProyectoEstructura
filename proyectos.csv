@@ -1,9 +1,15 @@
-﻿Menos Corrupcion,40,
-Militarizacion,20
-Mejor Infraestructura,25
-Mayor Participacion Ciudadana,30
-Instituciones de Orden,20
-Servicios Basicos,35
-Educacion,40
-Economia Estable,50
-Industralizacion,45
+﻿Menos Corrupcion,10,Corrupcion
+Militarizacion,6,Seguridad
+Mejor Infraestructura,7,Seguridad
+Mayor Participacion Ciudadana,6,Confianza
+Instituciones de Orden,6,Estres
+Servicios Basicos,10,Sanidad
+Educacion,10,Nivel Educativo
+Economia Estable,10,Pobreza
+Industrializacion,6,Pobreza
+Parques,5,Felicidad
+Mejores Sueldos,7,Pobreza
+Fabricas,6,Contaminacion
+Transporte Publico,7,Conectividad
+Construccion de Carceles,7,Corrupcion
+Puntos de Limpieza,5,Contaminacion
